@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      <script>
+                $(document).on("pagecreate","#page1",function() {
+                 $(document).on("swiperight",function(e) {
+                      //   alert(e.type);
+              if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+                if ( e.type === "swipeleft"  ) {
+                        $( "#panel1" ).panel( "open" );
+                        
+                } else if ( e.type === "swiperight" ) {
+                        $( "#panel1" ).panel( "open" );
+                        
+                }
+                } 
+                 });
+              });
+            $(document).on("pagecreate","#page2",function() {
+            $(document).on("swiperight",function(e) {
+                if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+                if ( e.type === "swipeleft"  ) {
+                        $( "#panel2" ).panel( "open" );
+                        
+                } else if ( e.type === "swiperight" ) {
+                        $( "#panel2" ).panel( "open" );
+                        
+                }
+                }
+            });
+         });
+            $(document).on("pagecreate","#page3",function() {
+            $(document).on("swiperight",function(e) {
+                if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+                if ( e.type === "swipeleft"  ) {
+                        $( "#panel3" ).panel( "open" );
+                        
+                } else if ( e.type === "swiperight" ) {
+                        $( "#panel3" ).panel( "open" );
+                        
+                }
+                }
+            });
+         });
+            $(document).on("pagecreate","#page4",function() {
+            $(document).on("swiperight",function(e) {
+                if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+                if ( e.type === "swipeleft"  ) {
+                        $( "#panel4" ).panel( "open" );
+                        
+                } else if ( e.type === "swiperight" ) {
+                        $( "#panel4" ).panel( "open" );
+                        
+                }
+                }
+            });
+         });
+            $(document).on("pagecreate","#page5",function() {
+            $(document).on("swiperight",function(e) {
+                if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+                if ( e.type === "swipeleft"  ) {
+                        $( "#panel5" ).panel( "open" );
+                        
+                } else if ( e.type === "swiperight" ) {
+                        $( "#panel5" ).panel( "open" );
+                        
+                }
+                }
+            });
+         });
+            $(document).on("pagecreate","#page6",function() {
+            $(document).on("swiperight",function(e) {
+                if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+                if ( e.type === "swipeleft"  ) {
+                        $( "#panel6" ).panel( "open" );
+                        
+                } else if ( e.type === "swiperight" ) {
+                        $( "#panel6" ).panel( "open" );
+                        
+                }
+                }
+            });
+         });
+              </script>
+   </head>
+
+   <body>       
+
+      <div data-role = "page" id = "page1">
+         <div data-role = "header">
+            <h2>The Last Leaf</h2>
+            
+         </div>
+
+         
+
+         <div role = "main" class = "ui-content">
+             <p>"The Last Leaf" is a short story by O. Henry published in 1907 in his collection The Trimmed Lamp and Other Stories.      
+              The story is set in Greenwich Village. It tells the story of an old artist who saves the life of a young artist, 
+              dying of pneumonia, by giving her the will to live. She can see a tree through the window gradually losing its leaves, and has taken it into her head that she will die when the last leaf falls. Seemingly, it never does fall, and she survives. We learn that in reality the tree lost all its leaves. What what she thought she saw was a leaf, painted on the wall with perfect realism, by the old artist. The old artist dies of pneumonia contracted while being out in the wet and cold, painting the last leaf.</p>
+
+              <a href = "#page2" class = "ui-btn" data-transition = "turn">
+                            Start Reading Book</a>
+
+         </div>
+
+         <div data-role = "footer">
+            <h4>Footer</h4>
+         </div>
+
+         <div data-role = "panel" id = "panel1">
+                        <h2>Book List</h2>
+                        <ul data-role = "listview">
+                         <li><a href="detailpage.html" ><img src="img/image5.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image1.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image2.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image3.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image4.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image6.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image7.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image9.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image8.png" style="width: 100px; height:100px;"></a></li>
+                        </ul>
+         </div>
+      </div>
+
+      <div data-role = "page"  id = "page2" data-close-btn="none">
+         <div data-role = "header">
+            <h1>First Page</h1>
+         </div>
+
+         <div role = "main" class = "ui-content">
+            <p>In a little district west of Washington Square the streets have run crazy and broken themselves into small strips called "places." These "places" make strange angles and curves. One Street crosses itself a time or two. An artist once discovered a valuable possibility in this street. Suppose a collector with a bill for paints, paper and canvas should, in traversing this route, suddenly meet himself coming back, without a cent having been paid on account!
+            So, to quaint old Greenwich Village the art people soon came prowling, hunting for north windows and eighteenth-century gables and Dutch attics and low rents. Then they imported some pewter mugs and a chafing dish or two from Sixth Avenue, and became a "colony."</p>
+            
+
+            <div class = "ui-grid-b" style="margin-left: 10%">
+                    <div class = "ui-block-a">
+                        <a href = "#page1" class = "ui-btn ui-btn-icon-right ui-icon-arrow-l ui-btn-icon-notext" >
+                                Home Page</a>
+                    </div>        
+                    <div class = "ui-block-b">
+                    <a href = "#page1" class = "ui-btn ui-btn-icon-home ui-icon-home ui-btn-icon-notext" data-transition = "turn">
+                            Home Page</a>
+                    </div>
+                    <div class = "ui-block-c">
+                    <a href = "#page3" class = "ui-btn ui-btn-icon-right ui-icon-arrow-r ui-btn-icon-notext" data-transition = "turn">
+                            Second Page</a>
+                    </div>
+              </div>
+
+         </div>
+         
+         <div data-role = "footer">
+                <h4>Footer</h4>
+             </div>
+                      <div data-role = "panel" id = "panel2">
+                        <h2>Book List</h2>
+                        <ul data-role = "listview">
+                         <li><a href="detailpage.html" ><img src="img/image5.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image1.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image2.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image3.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image4.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image6.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image7.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image9.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image8.png" style="width: 100px; height:100px;"></a></li>
+                        </ul>
+         </div>
+      </div>
+      
+      <div data-role = "page"  data-close-btn = "none" id = "page3">
+         <div data-role = "header">
+            <h1>Second Page</h1>
+         </div>
+
+         <div role = "main" class = "ui-content">
+            <p> At the top of a squatty, three-story brick Sue and Johnsy had their studio. "Johnsy" was familiar for Joanna. One was from Maine; the other from California. They had met at the table d'hôte of an Eighth Street "Delmonico's," and found their tastes in art, chicory salad and bishop sleeves so congenial that the joint studio resulted.
+                    
+            That was in May. In November a cold, unseen stranger, whom the doctors called Pneumonia, stalked about the colony, touching one here and there with his icy fingers. Over on the east side this ravager strode boldly, smiting his victims by scores, but his feet trod slowly through the maze of the narrow and moss-grown "places."</p>
+
+
+            <div class = "ui-grid-b" style="margin-left: 10%">
+                    <div class = "ui-block-a">
+                        <a href = "#page2" class = "ui-btn ui-btn-icon-right ui-icon-arrow-l ui-btn-icon-notext">
+                                First Page</a>
+                    </div>        
+                    <div class = "ui-block-b">
+                    <a href = "#page1" class = "ui-btn ui-btn-icon-home ui-icon-home ui-btn-icon-notext" data-transition = "turn">
+                            Home Page</a>
+                    </div>
+                    <div class = "ui-block-c">
+                        <a href = "#page4" class = "ui-btn ui-btn-icon-right ui-icon-arrow-r ui-btn-icon-notext" data-transition = "turn">
+                                Third Page</a>
+                    </div>
+              </div>
+         </div>
+         
+         <div data-role = "footer">
+                <h4>Footer</h4>
+             </div>
+                      <div data-role = "panel" id = "panel3">
+                        <h2>Book List</h2>
+                        <ul data-role = "listview">
+                         <li><a href="detailpage.html" ><img src="img/image5.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image1.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image2.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image3.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image4.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image6.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image7.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image9.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image8.png" style="width: 100px; height:100px;"></a></li>
+                        </ul>
+         </div>
+      </div>
+      <div data-role = "page"  data-close-btn = "none" id = "page4">
+            <div data-role = "header">
+               <h1>Third Page</h1>
+            </div>
+   
+            <div role = "main" class = "ui-content">
+               <p>  Mr. Pneumonia was not what you would call a chivalric old gentleman. A mite of a little woman with blood thinned by California zephyrs was hardly fair game for the red-fisted, short-breathed old duffer. But Johnsy he smote; and she lay, scarcely moving, on her painted iron bedstead, looking through the small Dutch window-panes at the blank side of the next brick house.
+                    
+                  One morning the busy doctor invited Sue into the hallway with a shaggy, grey eyebrow.</p>
+
+                  <div class = "ui-grid-b" style="margin-left: 10%">
+                        <div class = "ui-block-a">
+                                <a href = "#page3" class = "ui-btn ui-btn-icon-right ui-icon-arrow-l ui-btn-icon-notext">
+                                        Second Page</a>
+                        </div>        
+                        <div class = "ui-block-b">
+                        <a href = "#page1" class = "ui-btn ui-btn-icon-home ui-icon-home ui-btn-icon-notext" data-transition = "turn">
+                                Home Page</a>
+                        </div>
+                        <div class = "ui-block-c">
+                                <a href = "#page5" class = "ui-btn ui-btn-icon-right ui-icon-arrow-r ui-btn-icon-notext" data-transition = "turn">
+                                        Fourth Page</a>
+                        </div>
+                  </div>
+
+            </div>
+            
+            <div data-role = "footer">
+                    <h4>Footer</h4>
+                 </div>
+                          <div data-role = "panel" id = "panel4">
+                        <h2>Book List</h2>
+                        <ul data-role = "listview">
+                         <li><a href="detailpage.html" ><img src="img/image5.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image1.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image2.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image3.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image4.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image6.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image7.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image9.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image8.png" style="width: 100px; height:100px;"></a></li>
+                        </ul>
+         </div>
+         </div>
+
+
+         <div data-role = "page"  data-close-btn = "none" id = "page5">
+                <div data-role = "header">
+                   <h1>Fourth Page</h1>
+                </div>
+       
+                <div role = "main" class = "ui-content">
+                   <p> "She has one chance in - let us say, ten," he said, as he shook down the mercury in his clinical thermometer. " And that chance is for her to want to live. This way people have of lining-u on the side of the undertaker makes the entire pharmacopoeia look silly. Your little lady has made up her mind that she's not going to get well. Has she anything on her mind?"</p>
+
+                   <div class = "ui-grid-b" style="margin-left: 10%">
+                        <div class = "ui-block-a">
+                                <a href = "#page4" class = "ui-btn ui-btn-icon-right ui-icon-arrow-l ui-btn-icon-notext" data-transition = "turn">
+                                        Third Page</a>
+                        </div>        
+                        <div class = "ui-block-b">
+                        <a href = "#page1" class = "ui-btn ui-btn-icon-home ui-icon-home ui-btn-icon-notext" data-transition = "turn">
+                                Home Page</a>
+                        </div>
+                        <div class = "ui-block-c">
+                                <a href = "#page6" class = "ui-btn ui-btn-icon-right ui-icon-arrow-r ui-btn-icon-notext" data-transition = "turn">
+                                        Fifth Page</a>
+                        </div>
+                  </div>
+
+
+                </div>
+                <div data-role = "footer">
+                        <h4>Footer</h4>
+                     </div>
+                              <div data-role = "panel" id = "panel5">
+                        <h2>Book List</h2>
+                        <ul data-role = "listview">
+                         <li><a href="detailpage.html" ><img src="img/image5.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image1.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image2.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image3.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image4.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image6.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image7.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image9.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image8.png" style="width: 100px; height:100px;"></a></li>
+                        </ul>
+         </div>
+         </div>
+         <div data-role = "page"  data-close-btn = "none" id = "page6">
+                <div data-role = "header">
+                   <h1>Fifth Page</h1>
+                </div>
+       
+                <div role = "main" class = "ui-content">
+                   <p> "She - she wanted to paint the Bay of Naples some day." said Sue.
+                        
+                       "Paint? - bosh! Has she anything on her mind worth thinking twice - a man for instance?"
+                        
+                       "A man?" said Sue, with a jew's-harp twang in her voice. "Is a man worth - but, no, doctor; there is nothing of the kind."</p>
+                   
+                       <div class = "ui-grid-b" style="margin-left: 10%">
+                            <div class = "ui-block-a">
+                                <a href = "#page5" class = "ui-btn ui-btn-icon-right ui-icon-arrow-l ui-btn-icon-notext" data-transition = "turn">
+                                        Fourth Page</a>
+                            </div>        
+                            <div class = "ui-block-b">
+                            <a href = "#page1" class = "ui-btn ui-btn-icon-home ui-icon-home ui-btn-icon-notext" data-transition = "turn">
+                                    Home Page</a>
+                            </div>
+                      </div>
+
+                </div>
+
+                <div data-role = "footer">
+                        <h4>Footer</h4>
+                     </div>
+                              <div data-role = "panel" id = "panel6">
+                        <h2>Book List</h2>
+                        <ul data-role = "listview">
+                         <li><a href="detailpage.html" ><img src="img/image5.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image1.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image2.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image3.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image4.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image6.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image7.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image9.jpg" style="width: 100px; height:100px;"></a></li>
+                         <li><a href="detailpage.html" ><img src="img/image8.png" style="width: 100px; height:100px;"></a></li>
+                        </ul>
+         </div>
+         </div>
+   </body>
+</html>

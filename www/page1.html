@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      <script>
+                $(document).on("pagecreate","#page1",function() {
+                 $(document).on("swiperight",function(e) {
+                      //   alert(e.type);
+              if ( $.mobile.activePage.jqmData( "panel" ) !== "open" ) {
+                if ( e.type === "swipeleft"  ) {
+                        $( "#panel1" ).panel( "open" );
+                        
+                } else if ( e.type === "swiperight" ) {
+                        $( "#panel1" ).panel( "open" );
+                        
+                }
+                } 
+                 });
+              });
+              </script>
+   </head>
+
+   <body>
+ 
+
+   </body>
+</html>
